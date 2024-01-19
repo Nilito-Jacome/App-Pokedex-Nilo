@@ -1,0 +1,19 @@
+
+.pokemones {
+    border: 2px solid #8292b6; 
+    width: 200px;
+    height: 150px;
+}
+.titulo5 {
+    text-decoration: none;
+    font-size: 2rem;
+    color: lime;
+    box-shadow: none;
+}
+.titulo5:hover {
+    color:bisque;
+}
+.img_poke {
+    width: 150px;
+    height: 100px;
+}

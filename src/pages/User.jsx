@@ -1,28 +1,43 @@
 import { useNavigate } from "react-router-dom";
+import './user.css';
+import { useState } from "react";
+import PokemonList from './PokemonList';
 
 const User = () => {
 
-const navigate =useNavigate()
+const navigate =useNavigate();
+
+const [value1, setValue1] = useState("");
 
 const handleSubmit = e => {
-    e.preventDefault ()
-    console.log(e.target[0].value)
-    navigate("/pokemons")
+    e.preventDefault ();
+    <PokemonList nombre={value1}/>
+    
 }
-    return (
-        <div>
-            <h1>Hellow Trainer!</h1>
 
-            <img src="/escribir.jpg" alt="" />
+    return (
+        <div className="user">
+            <h1 className="titulo2">Hellow Trainer!</h1>
+           
+            <img className="img_user" src="/escribir.jpg" alt="" />
+                       
             
-            <form onSubmit={ e => handleSubmit(e)}>
+            <form className="form" onSubmit={ e => handleSubmit(e)}>
                 <div className="input-wrapper">
-                    <label htmlFor="Usuario">Usuario </label>
-                    <input type="text" id="name"
-                    placeholder={"Cive me your name to start"}
-                    {...{ required: true }}/>
+                    <label htmlFor="name">User </label>
+                    <input 
+                    type="text" 
+                    name="name"
+                    id="name"
+                    placeholder={"Enter your name to get started"}
+                    onChange={ (e) => setValue1(e.target.value)}
+                    value={ value1 }
                     
-                    <button type="submit">Enviar</button>
+                    {...{ required: true }}/>
+
+                    <button className="boton" type="submit" >Send</button>
+                   
+                   
                 </div>
             </form>
         </div>

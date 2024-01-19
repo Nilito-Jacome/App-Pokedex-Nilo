@@ -11,7 +11,7 @@ export function App() {
     <div id='App'>
       <HashRouter>
 
-        <h1>POKEDEX OF THE POKEMONS</h1>
+        <h1 className='titulo1'>POKEDEX OF THE POKEMONS</h1>
 
         <Routes>
           <Route 
@@ -27,8 +27,6 @@ export function App() {
           element={ <PokemonDetail />}        
           />
         </Routes>
-        
-        <p></p>
         
       </HashRouter>
 

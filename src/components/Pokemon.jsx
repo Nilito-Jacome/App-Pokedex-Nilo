@@ -1,6 +1,7 @@
 import axios from "axios";
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
+import './pokemon.css';
 
 const Pokemon = ({ url }) => {
 
@@ -21,9 +22,9 @@ const getPokemonDetail = async () => {
     return (
         
         <Link to= {`/pokemons/${data.id}`}>
-            <div  className="Pokemons">
-                <h1>{data.name}</h1>
-                <img src={data.sprites?.front_default} alt=""/>
+            <div  className="pokemones">
+                <h1 className="titulo5">{data.name}</h1>
+                <img className="img_poke" src={data.sprites?.front_default} alt=""/>
             </div>
         </Link >
     );
