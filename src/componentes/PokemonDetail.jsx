@@ -1,14 +1,15 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios';
+import "../componentes/PokemonDetail.css";
+import {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
-import './pokemonDetail.css';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
+
 
 const PokemonDetail = () => {
-    
+
     const [data, setData] = useState ({})
     const { id } = useParams()
-    const navigate =useNavigate()
+    const navigate = useNavigate()
 
     useEffect ( () => {
         axios
@@ -18,7 +19,7 @@ const PokemonDetail = () => {
     }, [id])
 
     return (
-        <div className='pokemon-card'>
+        <div className="PokemonDetail">
             <h1 className='nombre'> {data.name}</h1>
             <img className='foto' src={data.sprites?.other.dream_world.front_default} alt="" />
 

@@ -1,4 +1,4 @@
-.pokemon-card {
+.PokemonDetail {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -7,7 +7,7 @@
 }
 .nombre {
     font-size: 5rem;
-    color: lawngreen;
+    color: white;
     text-align: center;
 }
 .foto {
@@ -24,14 +24,13 @@
     margin-left: 750px;
     font-size: 20px;
     border: 2px solid #8292b6; 
-    background-color:lawngreen;
+    background-color:white;
 }
 .regresar1:hover {
-    background-color: lime;
-    color: red;
+    background-color: #8292b6; 
 }
 @media screen and (max-width: 1024px) {
-    .pokemon-card {
+    .PokemonDetail {
         width: 500px;
         height: 80vh;
     }
@@ -51,7 +50,7 @@
     }
 }
 @media screen and (max-width: 425px) {
-    .pokemon-card {
+    .PokemonDetail {
         width: 300px;
         height: 75vh;
     }

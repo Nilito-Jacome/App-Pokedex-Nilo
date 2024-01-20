@@ -1,11 +1,11 @@
-.user {
+.User {
     display: flex;
     flex-direction: column;
 }
 .titulo2 {
     padding-top: 20px;
     font-size: 3rem;
-    color: lawngreen;
+    color: white;
     text-align: center;
 }
 .img_user {
@@ -28,7 +28,7 @@
     padding: 0.5rem;
     border-radius: 20px;
     border: 2px solid #8292b6; 
-    color: lawngreen;
+    color: white;
     font-size: 2.5rem;
     padding-left: 10px;
   }
@@ -39,7 +39,7 @@
     width: 450px;
     border-radius: 20px;
     border: 2px solid #8292b6; 
-    color: lawngreen;
+    color: white;
     background-color:black;
 }
 .boton {
@@ -47,12 +47,11 @@
     width: 100px;
     border-radius: 20px;
     border: 2px solid #8292b6; 
-    background-color: lawngreen;
+    background-color: white;;
 }
-::placeholder { color: rgba(126, 252, 0, 0.658); }
+::placeholder { color: white; }
 .boton:hover {
-    background-color: lime;
-    color: red;
+    background-color: #8292b6;
 }
 @media screen and (max-width: 1024px) {
     .titulo2 {
