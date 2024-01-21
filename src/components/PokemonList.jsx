@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import Pokemon from '../components/Pokemon';
+import Pokemon from './Pokemon';
 
 const PokemonList = () => {
 
