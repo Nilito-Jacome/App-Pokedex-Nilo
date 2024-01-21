@@ -20,7 +20,7 @@ const PokemonDetail = () => {
     return (
         <div className="PokemonDetail">
             <h1 className='nombre'> {data.name}</h1>
-            <img className='foto' src={data.sprites?.other.dream_world.front_default} alt="" />
+            <img className='foto' src={data.sprites?.other.home.front_default} alt="" />
 
             <button className='regresar1' onClick={() => navigate("/pokemons")}> Regresar</button>
         </div>
