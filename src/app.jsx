@@ -1,37 +1,39 @@
-import "./App.css";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import User from './componentes/User';
-import PokemonList from './componentes/PokemonList';
-import PokemonDetail from './componentes/PokemonDetail';
+import './app.css'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import User from './pages/User'
+import PokemonList from './pages/PokemonList'
+import PokemonDetail from './pages/PokemonDetail'
 
-const  App = () => {
+export function App() {
+ 
 
   return (
-    <div className="App">
-
+    <div id='App'>
       <HashRouter>
-        <h1 className="titulo1">POKEDEX OF THE POKEMONS</h1>
+
+        <h1>POKEDEX OF THE POKEMONS</h1>
 
         <Routes>
-
           <Route 
-          path="/" 
-          element={<User />} 
+          path ="/"
+          element={ <User />}        
           />
           <Route 
-          path="/pokemons" 
-          element={<PokemonList />} 
+          path ="/pokemons"
+          element={ <PokemonList />}        
           />
           <Route 
-          path="/pokemons/:id" 
-          element={<PokemonDetail />} 
+          path ="/pokemons/:id"
+          element={ <PokemonDetail />}        
           />
         </Routes>
-
-
+        
+        <p></p>
+        
       </HashRouter>
-    </div>
-  );
-}
 
-export default App;
+      
+        
+    </div>
+  )
+}
